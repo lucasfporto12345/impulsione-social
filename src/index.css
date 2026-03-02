@@ -1,0 +1,74 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Otimizações de Performance */
+@layer base {
+  /* Otimização de renderização de imagens */
+  img {
+    content-visibility: auto;
+  }
+  
+  /* Otimização de scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Prevenir layout shift em imagens */
+  img:not([width]):not([height]) {
+    aspect-ratio: attr(width) / attr(height);
+  }
+  
+  /* Otimização de fontes */
+  body {
+    text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  /* Classe para lazy loading de seções */
+  .lazy-section {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 500px;
+  }
+  
+  /* Animação otimizada para fade-in */
+  .fade-in {
+    animation: fadeIn 0.3s ease-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Otimização para elementos fixos */
+  .will-change-transform {
+    will-change: transform;
+  }
+  
+  /* Skeleton loading */
+  .skeleton {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s infinite;
+  }
+  
+  @keyframes skeleton-loading {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+}

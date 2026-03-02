@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+Allow: /seguidores-instagram
+Allow: /seguidores-tiktok
+Allow: /seguidores-facebook
+Allow: /seguidores-twitter
+Allow: /seguidores-kwai
+Allow: /curtidas-instagram
+Allow: /curtidas-tiktok
+Allow: /curtidas-facebook
+Allow: /curtidas-youtube
+Allow: /curtidas-twitter
+Allow: /curtidas-kwai
+Allow: /visualizacoes-instagram
+Allow: /visualizacoes-tiktok
+Allow: /visualizacoes-facebook
+Allow: /visualizacoes-youtube
+Allow: /visualizacoes-twitter
+Allow: /visualizacoes-kwai
+Allow: /inscritos-youtube
+
+Sitemap: https://impulsionesocial.com/sitemap.xml
