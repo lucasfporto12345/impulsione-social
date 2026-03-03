@@ -5,7 +5,7 @@ import { useUTMTracking } from '../../hooks/useUTMTracking';
 const socialPlatforms = [
   {
     name: 'Instagram',
-    icon: 'https://app.midiahype.com/assets/imgs/medias/instagram.png',
+    icon: '/images/medias/instagram.png',
     color: 'from-blue-500 to-blue-400',
     bgColor: 'bg-gradient-to-b from-blue-500 to-blue-400',
     services: [
@@ -16,7 +16,7 @@ const socialPlatforms = [
   },
   {
     name: 'Tiktok',
-    icon: 'https://app.midiahype.com/assets/imgs/medias/tiktok.png',
+    icon: '/images/medias/tiktok.png',
     color: 'from-gray-900 to-gray-800',
     bgColor: 'bg-gradient-to-b from-gray-900 to-gray-800',
     services: [
@@ -27,7 +27,7 @@ const socialPlatforms = [
   },
   {
     name: 'Facebook',
-    icon: 'https://app.midiahype.com/assets/imgs/medias/facebook.png',
+    icon: '/images/medias/facebook.png',
     color: 'from-blue-600 to-blue-500',
     bgColor: 'bg-gradient-to-b from-blue-600 to-blue-500',
     services: [
@@ -38,7 +38,7 @@ const socialPlatforms = [
   },
   {
     name: 'Youtube',
-    icon: 'https://app.midiahype.com/assets/imgs/medias/youtube.png',
+    icon: '/images/medias/youtube.png',
     color: 'from-red-600 to-red-500',
     bgColor: 'bg-gradient-to-b from-red-600 to-red-500',
     services: [
@@ -49,7 +49,7 @@ const socialPlatforms = [
   },
   {
     name: 'Twitter',
-    icon: 'https://app.midiahype.com/assets/imgs/medias/x.png',
+    icon: '/images/medias/x.png',
     color: 'from-sky-500 to-sky-400',
     bgColor: 'bg-gradient-to-b from-sky-500 to-sky-400',
     services: [
@@ -60,7 +60,7 @@ const socialPlatforms = [
   },
   {
     name: 'Kwai',
-    icon: 'https://app.midiahype.com/assets/imgs/medias/kwai.png',
+    icon: '/images/medias/kwai.png',
     color: 'from-orange-500 to-orange-400',
     bgColor: 'bg-gradient-to-b from-orange-500 to-orange-400',
     services: [
@@ -75,17 +75,17 @@ const steps = [
   {
     title: 'Escolha o serviço que precisa',
     description: 'Selecione a plataforma, em seguida escolha qual tipo de serviço você precisa.',
-    image: 'https://app.midiahype.com/assets/imgs/info/service-select.png'
+    image: '/images/info/service-select.png'
   },
   {
     title: 'Confirme e finalize seu pedido',
     description: 'Agora que você já escolheu o serviço, apenas confirme o pedido e o pagamento.',
-    image: 'https://app.midiahype.com/assets/imgs/info/confirm-and-finish.png'
+    image: '/images/info/confirm-and-finish.png'
   },
   {
     title: 'Pronto! O serviço está iniciado',
     description: 'Acompanhe o andamento diretamente pelo seu perfil ou diretamente aqui no site.',
-    image: 'https://app.midiahype.com/assets/imgs/info/start-service.png'
+    image: '/images/info/start-service.png'
   }
 ];
 
@@ -134,12 +134,12 @@ export default function Home() {
   // Preload de imagens críticas
   useEffect(() => {
     const criticalImages = [
-      'https://app.midiahype.com/assets/imgs/medias/instagram.png',
-      'https://app.midiahype.com/assets/imgs/medias/tiktok.png',
-      'https://app.midiahype.com/assets/imgs/medias/facebook.png',
-      'https://app.midiahype.com/assets/imgs/medias/youtube.png',
-      'https://app.midiahype.com/assets/imgs/medias/x.png',
-      'https://app.midiahype.com/assets/imgs/medias/kwai.png'
+      '/images/medias/instagram.png',
+      '/images/medias/tiktok.png',
+      '/images/medias/facebook.png',
+      '/images/medias/youtube.png',
+      '/images/medias/x.png',
+      '/images/medias/kwai.png'
     ];
 
     let loadedCount = 0;

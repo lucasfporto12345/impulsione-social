@@ -6,10 +6,10 @@ export const usePerformance = () => {
     // Preload de imagens críticas após o carregamento inicial
     const preloadCriticalImages = () => {
       const criticalImages = [
-        'https://app.midiahype.com/assets/imgs/medias/instagram.png',
-        'https://app.midiahype.com/assets/imgs/medias/tiktok.png',
-        'https://app.midiahype.com/assets/imgs/medias/facebook.png',
-        'https://app.midiahype.com/assets/imgs/medias/youtube.png'
+        '/images/medias/instagram.png',
+        '/images/medias/tiktok.png',
+        '/images/medias/facebook.png',
+        '/images/medias/youtube.png'
       ];
 
       criticalImages.forEach(src => {
